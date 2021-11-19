@@ -26,11 +26,7 @@ jobs:
             ${{ runner.os }}-node-
       # Install Package
       - name: npm install
-        run: |
-          cd blog
-          npm ci
+        run: npm ci
       # Run build
       - name: npm build
-        run: |
-          cd blog/
-          npm run build --if-present
+        run: npm run build --if-present
