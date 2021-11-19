@@ -2,7 +2,8 @@
 title: "長年KeePassを使ったが、これからはBitwardenをオススメしたい"
 date: "2021-01-28"
 description: "約6年間KeePassシリーズを利用しましたが、この度Bitwardenに完全移行しました。その理由と今後はBitwardenをオススメする理由について書いています。"
-pagepath: "https://blog.ue-y.me/recommend-bitwarden/thumbnail.png"
+category: "dev"
+emoji: "🔒"
 ---
 
 こんにちは。友人のセキュリティ意識向上に全力の上ちょ([@psnzbss](https://twitter.com/psnzbss))です。

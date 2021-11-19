@@ -2,7 +2,8 @@
 title: "Gitで異なる２つのリポジトリを連結（統合）する方法"
 date: "2020-06-07"
 description: "gitで異なる２つのリポジトリを統合することが実はできます。Githubのリポジトリを整理したいときなどに利用できるテクニックをまとめました。"
-pagepath: "https://blog.ue-y.me/git-merge-other-repo/thumbnail.png"
+category: "dev"
+emoji: "🌴"
 ---
 ## 課題
 以前書いたコードを見直していると煩雑なリポジトリ構成（複数親ディレクトリ：１リポジトリ）だったため１つのリポジトリに統合して管理したいと考えた。

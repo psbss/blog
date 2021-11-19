@@ -2,7 +2,8 @@
 title: "React-Shareを利用してGatsby.jsにSNS共有ボタンを作る"
 date: "2020-03-26"
 description: "『Gatsby 使い始めたのに、ソーシャルボタンないし使いづらい』そんなお悩みを React-Share で解決します"
-pagepath: "https://blog.ue-y.me/gatsby-sns/thumbnail.png"
+category: "dev"
+emoji: "💻"
 ---
 
 『Gatsby 使い始めたのに、SNS共有ボタンないし使いづらい』そんなお悩みを React-Share で解決します。

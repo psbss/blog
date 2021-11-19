@@ -2,7 +2,8 @@
 title: "ソフトバンク株式会社のインターンに参加しました"
 date: "2020-09-15"
 description: ""
-pagepath: "https://blog.ue-y.me/softbank-intern2020/thumbnail.png"
+category: "life"
+emoji: "🐣"
 ---
 
 スピード感は重要

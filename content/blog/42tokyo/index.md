@@ -1,7 +1,7 @@
 ---
 title: "42Tokyoに入学して3ヶ月経ちました"
 date: "2020-10-02"
-category: "dev"
+category: "life"
 description: "42Tokyoに入学して3ヶ月経ちました。入学経緯と日本の42について触れて振り返ります。"
 emoji: "🏫"
 ---

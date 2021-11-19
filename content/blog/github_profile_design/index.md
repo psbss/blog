@@ -2,7 +2,8 @@
 title: "イケてるGithubのプロフィールページを作るために"
 date: "2020-08-12"
 description: "Githubにプロフィールページを設置することができるようになったのでイケてる感じにしてみました。今回はShields.ioを利用したバッチの掲載と Github Readme Stats を利用したリポ統計画像を設置します"
-pagepath: "https://blog.ue-y.me/github_profile_design/thumbnail.png"
+category: "dev"
+emoji: "🐙"
 ---
 
 さて、いきなりですがGithubにプロフィールページ機能が追加されたことはご存知ですか？

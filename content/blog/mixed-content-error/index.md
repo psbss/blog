@@ -2,7 +2,8 @@
 title: "Mixed content Error"
 date: "2020-04-12"
 description: ""
-pagepath: "https://blog.ue-y.me/mixed-content-error/thumbnail.png"
+category: "dev"
+emoji: "💻"
 ---
  
 ## 経緯

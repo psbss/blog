@@ -25,11 +25,11 @@ const Footer = () => {
       <ContentWrapper>
         <FooterInner>
           <div>
-            <a href="https://github.com/catnose99/CatKnows" rel="nofollow">
+            <a href="https://github.com/psbss/blog" rel="nofollow">
               SourceCode
             </a>
           </div>
-          <div>© {new Date().getFullYear()}, CatNose All rights reserved.</div>
+          <div>© {new Date().getFullYear()}, Yuki Uehara All rights reserved.</div>
         </FooterInner>
       </ContentWrapper>
     </FooterContent>

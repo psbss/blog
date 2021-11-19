@@ -9,23 +9,18 @@ module.exports = {
     },
     categories: [
       {
-        name: "Design",
-        slug: "design",
-        color: "#0c9ee4",
-      },
-      {
         name: "Dev",
         slug: "dev",
         color: "#f7615f",
       },
       {
-        name: "Self",
-        slug: "self",
+        name: "Life",
+        slug: "life",
         color: "#ffa22b",
       },
       {
-        name: "Collect",
-        slug: "collect",
+        name: "Other",
+        slug: "other",
         color: "#ffa22b",
       },
     ],
@@ -131,7 +126,7 @@ module.exports = {
         background_color: `rgb(33, 36, 45)`,
         theme_color: `#0c9ee4`,
         display: `minimal-ui`,
-        icon: `content/assets/avatar.png`,
+        icon: `content/assets/siteicon.png`,
       },
     },
     {
@@ -193,7 +188,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "catnose99.com RSS feed",
+            title: "ue-y.me RSS feed",
           },
         ],
       },

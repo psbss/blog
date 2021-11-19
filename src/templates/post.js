@@ -16,8 +16,6 @@ import postSyntaxHighlightStyle from "../styles/postSyntaxHighlight";
 import postContentStyle from "../styles/postContent";
 import postCustomBlockStyle from "../styles/postCustomBlock";
 
-import svgPattern from "../svg/others/pattern.svg";
-
 const Content = styled.section`
   position: relative;
   overflow: hidden;
@@ -32,7 +30,6 @@ const HeroImage = styled.p`
   position: relative;
   background: ${(props) => props.theme.colors.blackLight};
   text-align: center;
-  background-image: url("${svgPattern}");
   background-repeat: repeat;
   background-size: 400px;
   min-height: 230px;

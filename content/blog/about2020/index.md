@@ -2,7 +2,8 @@
 title: "2020年を振り返る by Yuu"
 date: "2020-12-31"
 description: "2020年を振り返り2021年をどのように生きるのか考えます。"
-pagepath: "https://blog.ue-y.me/about2020/thumbnail.png"
+category: "life"
+emoji: "📅"
 ---
 
 ![2020年の草原](./about2020.png)

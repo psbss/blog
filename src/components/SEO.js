@@ -10,7 +10,7 @@ const SEO = ({ description, lang, meta, title }) => {
       render={(data) => {
         const metaDescription =
           description || data.site.siteMetadata.description;
-        const defaultTitle = "CatKnows | CatNoseの個人ブログ";
+        const defaultTitle = "More Curiosity | Uetyo";
         return (
           <Helmet
             htmlAttributes={{

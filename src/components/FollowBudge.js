@@ -20,9 +20,9 @@ const FollowLink = styled.a`
 const ShareButtons = () => {
   return (
     <Follow>
-      <FollowLink href="https://twitter.com/catnose99" rel="nofollow">
+      <FollowLink href="https://twitter.com/psnzbss" rel="nofollow">
         <img src={svgTwitterWhite} alt="Twitter" width={31} height={17} />
-        Follow @catnose99
+        Follow @psnzbss
       </FollowLink>
     </Follow>
   );

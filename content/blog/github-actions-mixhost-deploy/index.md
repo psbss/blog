@@ -2,7 +2,8 @@
 title: "Github Actions でビルドして Mixhost にデプロイする方法"
 date: "2020-06-15"
 description: "以前このブログをデプロイする際に利用した Github Actions ですが、久しぶりに利用したところ、SSH認証に手こずったので、方法をまとめておく。"
-pagepath: "https://blog.ue-y.me/github-actions-mixhost-deploy/thumbnail.png"
+category: "dev"
+emoji: "🔐"
 ---
 
 以前このブログをデプロイする際に利用した Github Actions ですが、久しぶりに利用したところ、SSH認証に手こずったので、方法をまとめておく。

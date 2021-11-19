@@ -2,10 +2,8 @@ import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import styled from "styled-components";
 
-import svgAvatar from "../svg/avatar.svg";
+import pngAvatar from "../svg/avatar.png";
 import svgTwitter from "../svg/socials/twitter.svg";
-import svgResume from "../svg/socials/resume.svg";
-import svgEmail from "../svg/socials/email.svg";
 
 const BioWrapper = styled.div`
   position: sticky;
@@ -54,7 +52,6 @@ const BioText = styled.p`
 `;
 const BioLinks = styled.div`
   margin-top: 1.5em;
-  display: flex;
   color: #fff;
   text-align: center;
   max-width: 244px;
@@ -67,7 +64,6 @@ const BioLinks = styled.div`
 `;
 
 const BioLink = styled.a`
-  width: 33.3%;
   display: block;
   font-weight: 700;
   font-size: 0.9em;
@@ -88,28 +84,17 @@ const Bio = () => {
         return (
           <BioWrapper>
             <BioHeader>
-              <AvatarImage src={svgAvatar} alt={author} />
+              <AvatarImage src={pngAvatar} alt={author} />
               <BioName>
                 <a href={`https://twitter.com/${social.twitter}`}>{author}</a>
               </BioName>
             </BioHeader>
             <BioMain>
               <BioText>
-                デザイナー/フロントエンドエンジニア。自分のペースでWebサービスやWebサイトを作っています。詳しくはRESUMEをどうぞ。
+                22歳なのに東京に行くと25歳と言われる地方学生エンジニア。仕事はiOSです。
               </BioText>
               <BioLinks>
-                <BioLink href="https://www.resume.id/catnose99">
-                  <img src={svgResume} alt="RESUME" />
-                  <div>RESUME</div>
-                </BioLink>
-                <BioLink
-                  className="bio-link--email"
-                  href="mailto:catnose99@gmail.com"
-                >
-                  <img src={svgEmail} alt="" />
-                  <div>E-mail</div>
-                </BioLink>
-                <BioLink href="https://twitter.com/catnose99">
+                <BioLink href="https://twitter.com/psnzbss">
                   <img src={svgTwitter} alt="Twitter" />
                   <div>Twitter</div>
                 </BioLink>

@@ -1,5 +1,5 @@
 {
-  "name": "Uetyo",
+  "name": "more_curiosity",
   "private": true,
   "description": "A personal blog by @uetyo",
   "version": "1.0.0",
@@ -31,7 +31,6 @@
     "gatsby-source-filesystem": "^2.0.20",
     "gatsby-transformer-remark": "^2.2.4",
     "gatsby-transformer-sharp": "^2.1.13",
-    "netlify-cli": "^2.8.0",
     "prismjs": "^1.15.0",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
@@ -46,9 +45,10 @@
   },
   "scripts": {
     "build": "gatsby build",
-    "dev": "gatsby develop",
+    "develop": "gatsby develop",
     "start": "npm run develop",
     "serve": "gatsby serve",
+    "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   }
 }
