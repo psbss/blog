@@ -86,7 +86,7 @@ const Bio = () => {
             <BioHeader>
               <AvatarImage src={pngAvatar} alt={author} />
               <BioName>
-                <a href={`https://twitter.com/${social.twitter}`}>{author}</a>
+                <a href={`https://twitter.com/${social.twitter}`} rel="nofollow noopener noreferrer" target="_blank">{author}</a>
               </BioName>
             </BioHeader>
             <BioMain>
@@ -94,7 +94,7 @@ const Bio = () => {
                 22歳なのに東京に行くと25歳と言われる地方学生エンジニア。仕事はiOSです。
               </BioText>
               <BioLinks>
-                <BioLink href="https://twitter.com/psnzbss">
+                <BioLink href="https://twitter.com/psnzbss" rel="nofollow noopener noreferrer" target="_blank">
                   <img src={svgTwitter} alt="Twitter" />
                   <div>Twitter</div>
                 </BioLink>
