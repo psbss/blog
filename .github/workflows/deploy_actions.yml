@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build:
+  build_sync:
     name: Package install / Build
     runs-on: ubuntu-latest
     steps:
@@ -17,6 +17,16 @@ jobs:
           cache: 'npm'
       - name: npm install
         run: npm ci
+      - name: Caching Gatsby
+        id: gatsby-cache-build
+        uses: actions/cache@v2
+        with:
+          path: |
+            public
+            .cache
+          key: ${{ runner.os }}-gatsby-build-${{ github.run_id }}
+          restore-keys: |
+            ${{ runner.os }}-gatsby-build-
       - name: npm build
         run: npm run build --if-present
       # Archive Production Artifact
@@ -25,32 +35,26 @@ jobs:
         with:
           name: public
           path: public
-
-  sync-with-server:
-    name: Sync with AWS S3
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Download Artifact
-        uses: actions/download-artifact@v2
-        with:
-          name: public
-          path: ~/public/
+      # Sync with Server
       - name: AWS configure credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-northeast-1
-      - name: S3 sync
-        run: aws s3 sync ~/public/ ${{ secrets.AWS_S3_BUCKET_NAME }} --delete
+      - name: Deploy
+        uses: jonelantha/gatsby-s3-action@v1
+        with:
+          dest-s3-bucket: ${{ secrets.AWS_S3_BUCKET_NAME }}
+          cloudfront-id-to-invalidate: ${{ secrets.AWS_CLOUDFRONT_ID }}
+          public-source-path: ./public/
 
   # Slack notification
   slack_notification:
     name: Slack notification
     if: always()
     runs-on: ubuntu-latest
-    needs: sync-with-server
+    needs: build_sync
     steps:
       - uses: technote-space/workflow-conclusion-action@v2
       - name: Slack Incoming Webhook

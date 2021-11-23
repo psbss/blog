@@ -96,6 +96,13 @@ module.exports = {
           //   },
           // },
           {
+            resolve: `gatsby-remark-external-links`,
+            options: {
+              target: "_blank",
+              rel: "nofollow noopener noreferrer",
+            }
+          },
+          {
             resolve: `gatsby-remark-prismjs`,
             options: {
               classPrefix: "language-",
@@ -103,13 +110,6 @@ module.exports = {
               aliases: {},
               noInlineHighlight: false,
             },
-          },
-          {
-            resolve: `gatsby-remark-external-links`,
-            options: {
-              target: "_blank",
-              rel: "nofollow noopener noreferrer",
-            }
           },
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
