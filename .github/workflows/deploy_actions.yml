@@ -42,8 +42,12 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-northeast-1
-      - name: S3 sync
-        run: aws s3 sync ~/public/ ${{ secrets.AWS_S3_BUCKET_NAME }} --delete
+      - name: Deploy
+        uses: jonelantha/gatsby-s3-action@v1
+        with:
+          dest-s3-bucket: ${{ secrets.AWS_S3_BUCKET_NAME }}
+          cloudfront-id-to-invalidate: ${{ secrets.AWS_CLOUDFRONT_ID }}
+          public-source-path: ./public/
 
   # Slack notification
   slack_notification:
