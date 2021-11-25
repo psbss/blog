@@ -1,5 +1,6 @@
 import { css } from "styled-components";
 import svgHeadingIcon from "../svg/others/heading-icon.svg";
+import svgHeadingBar from "../svg/others/heading-bar.svg";
 
 const postContentStyle = css`
   margin: 1.5em 0 1em;
@@ -34,7 +35,7 @@ const postContentStyle = css`
       width: 5px;
       height: 100%;
       border-radius: 5px;
-      background: linear-gradient(0deg,#ffa649 0% ,#ffa649 50%,#f7645b 50%,#f7645b 100%);
+      background: linear-gradient(0deg,#839E1A 0%, #839E1A 50%, #007AB8 50%, #007AB8 100%);
     }
   }
   h3 {
