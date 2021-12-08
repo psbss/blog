@@ -34,7 +34,7 @@ npm install --save gatsby-remark-sns-images
 
 インストールができたら、```gatsby-config.js```に配置します。
 
-```js:gatsby-config.js
+```js:title=gatsby-config.js
 resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
