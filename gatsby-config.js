@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Inquisitiveness`,
+    title: `MoreCuriosity`,
     author: `Yuki Uehara`,
-    description: `地方で生活している学生の日々勉強した内容や参加したイベント情報など`,
+    description: `地方で生活している学生が日々勉強した内容や参加したイベント情報などを発信します`,
     siteUrl: `https://blog.ue-y.me/`,
     social: {
       twitter: `psnzbss`,
