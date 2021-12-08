@@ -51,7 +51,7 @@ TailwindCSS では無数のクラスを持っているので、付属してい�
 ---
 
 Webpack を利用する場合以下のように
-```webpack.config.js
+```js:title=webpack.config.js
 use: [
           // ...
           {

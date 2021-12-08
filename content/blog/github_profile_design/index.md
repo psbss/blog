@@ -74,7 +74,7 @@ Github ユーザおなじみのバッジを利用してみましょう。バッ�
 
 README.md に以下の画像リンクを設置します
 
-```README.md
+```md:title=README.md
 <!-- リポジトリステータス -->
 [![hogehoge's github stats](https://github-readme-stats.vercel.app/api?username=ユーザ名&hide=contribs&count_private=true&show_icons=true&theme=tokyonight)](https://github.com/ユーザ名/)
 
