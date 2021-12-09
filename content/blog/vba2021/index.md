@@ -64,7 +64,7 @@ GitHubやStackOrverflowを漁りましたが、どうやらLintツールが存�
 
 以下のような構造のディレクトリを作成してください。
 
-```console
+```bash
 vba-sample
 ├── bin/
 └── src/
@@ -86,7 +86,7 @@ Excel設定オプション → トラストセンター → トラストセン�
 
 リポジトリには色々なファイルが存在しますが、必要なのは `vbac.wsf` のみです。以下のように設置します。
 
-```console
+```bash
 vba-sample
 ├── bin/
 ├── src/
@@ -95,7 +95,7 @@ vba-sample
 
 `bin/` ディレクトリ以下に変換対象のExcelVBAファイル（`.xlsm`）を設置します。
 
-```console
+```bash
 vba-sample
 ├── bin/
 │   └── sample.xlsm  //追加
@@ -111,7 +111,7 @@ $ cscript vbac.wsf decombine
 
 すると `src/` 以下にテキストファイルが作成されます。
 
-```console
+```bash
 vba-sample
 ├── bin/
 │   └── sample.xlsm
@@ -126,7 +126,7 @@ vba-sample
 
 日本語を含むVBAファイルの場合は文字化けする可能性があるので文字コードを `Shift JIS` 、改行コードを `CRLF` に変更します。
 
-```console
+```bash
 vba-sample
 ├── .vscode/  //追加
 │   └── settings.json  //追加
@@ -171,7 +171,7 @@ $ cscript vbac.wsf combine
 ## VBA開発でGitを利用したバージョン管理する方法
 普段通りに `git init` すればいいのですが、文字コードの制約があるので `.gitattributes` を追加します。
 
-```console
+```bash
 vba-sample
 ├── .vscode/
 │   └── settings.json
@@ -219,7 +219,7 @@ vba-sample
 ## VBA開発でGitHubを用いたチーム開発環境を構築する方法
 コンフリクト対策のためベース用のExcelファイルを追加します。
 
-```console
+```bash
 vba-sample
 ├── .vscode/
 │   └── settings.json
@@ -244,7 +244,7 @@ vba-sample
 
 ExcelVBAのバイナリファイルから変換する際のコマンド失敗すると変更が吹き飛ぶことがあるのでバッチファイルを作ります。バッチファイルも文字コードが `Shift JIS` 、改行コードが `CRLF` で作らないと実行できないので気をつけてください。
 
-```console
+```bash
 vba-sample
 ├── .vscode/
 │   └── settings.json
@@ -262,7 +262,7 @@ vba-sample
 └── vbac.wsf
 ```
 
-```batchfile:title=CONVERT.bat
+```batch:title=CONVERT.bat
 @echo off
 
 :: --- 変数の宣言 ---
@@ -306,7 +306,7 @@ exit
 exit
 ```
 
-```batchfile:title=EXPORT.bat
+```batch:title=EXPORT.bat
 @echo off
 
 :: --- バッチファイル内容 ---
