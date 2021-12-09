@@ -27,6 +27,17 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-9L67PRJ41Y"
+        ],
+        pluginConfig: {
+          head: true,
+        },
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
@@ -128,12 +139,6 @@ module.exports = {
         theme_color: `#007AB8`,
         display: `minimal-ui`,
         icon: `content/assets/siteicon.png`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "UA-114688805-9",
       },
     },
     `gatsby-plugin-sitemap`,
