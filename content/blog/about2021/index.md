@@ -1,7 +1,7 @@
 ---
 title: "2021年を振り返る by Yuu"
 date: "2021-12-30"
-category: "Life"
+category: "life"
 description: ""
 emoji: "📅"
 ---
