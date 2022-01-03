@@ -1,5 +1,5 @@
 ---
-title: "2021の目標と計画 by Yuu"
+title: "2021年の目標と計画"
 date: "2021-01-01"
 description: "2021年の目標と計画について"
 category: "life"
