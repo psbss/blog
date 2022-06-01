@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 import pngAvatar from "../svg/avatar.png";
 import svgTwitter from "../svg/socials/twitter.svg";
+import svgGithub from "../svg/socials/github.svg";
 
 const BioWrapper = styled.div`
   position: sticky;
@@ -55,6 +56,9 @@ const BioLinks = styled.div`
   color: #fff;
   text-align: center;
   max-width: 244px;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
   img {
     display: block;
     margin: 0 auto;
@@ -91,12 +95,16 @@ const Bio = () => {
             </BioHeader>
             <BioMain>
               <BioText>
-                22歳なのに東京に行くと25歳と言われる地方学生エンジニア。仕事はiOSです。
+                22年新卒iOSエンジニアです!
               </BioText>
               <BioLinks>
                 <BioLink href="https://twitter.com/psnzbss" rel="nofollow noopener noreferrer" target="_blank">
                   <img src={svgTwitter} alt="Twitter" />
                   <div>Twitter</div>
+                </BioLink>
+                <BioLink href="https://github.com/psbss" rel="nofollow noopener noreferrer" target="_blank">
+                  <img src={svgGithub} alt="GitHub" />
+                  <div>GitHub</div>
                 </BioLink>
               </BioLinks>
             </BioMain>
