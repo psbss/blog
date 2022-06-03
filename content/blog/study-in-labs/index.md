@@ -1,7 +1,7 @@
 ---
 title: "研究室で学んだこと"
 date: "2022-02-15"
-category: "Life"
+category: "life"
 description: "研究室での生活が終わり論文から開放されたので、学んだことをざっくりまとめる"
 emoji: "🎓"
 ---
