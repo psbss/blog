@@ -5,8 +5,11 @@ const postContentStyle = css`
   margin: 1.5em 0 1em;
   line-height: 1.9;
 
-  a:hover {
-    text-decoration: underline;
+  a {
+    overflow-wrap: anywhere;
+    &:hover {
+      text-decoration: underline;  
+    }
   }
   p {
     margin-bottom: 1.5em;
