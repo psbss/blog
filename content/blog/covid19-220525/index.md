@@ -99,7 +99,7 @@ Swiftの勉強
 追加分の薬も公費の対象とのことでで、自宅まで届けてもらった際にお金を払うことはなかったです。
 
 ### ・東京都自宅療養サポートセンター
-https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/corona_portal/shien/uchisapo_tokyo.html
+https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/corona_portal/shien/uchisapo_tokyo.html  
 自宅療養時は自宅からの外出を控える必要があるため食料品が不足しますが、東京都が展開する自宅療養サポートセンターにお願いすると食料品とパルスオキシメーターを届けてもらうことができます。
 
 かなり量が多いので、自宅療養する人は必須の制度ですね。
