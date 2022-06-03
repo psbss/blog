@@ -58,10 +58,10 @@ jobs:
 
 注目すべき点は `Caching Gatsby` の部分です。ここでは、ビルドすると生成される `public` ディレクトリと `.cache` ディレクトリをキャッシュします。GitHub Actionsの制約上、たしか30日で破棄されますが、30日間のうちに同じワークフローを実行すると今回利用したい「Incremental Build」が効果を発揮します。
 
-↓ キャッシュが存在しない場合のビルド時間(3:19s)
+↓ キャッシュが存在しない場合のビルド時間(3:19s) [workflow](https://github.com/psbss/blog/actions#:~:text=Merge%20pull%20request%20%2391%20from%20psbss/article/covid19%2D0525)
 ![GitHub Actions no cache build log](./gha-log-no-cache.png)
 
-↓ キャッシュを利用した Incremental Build のビルド時間(1:42s)
+↓ キャッシュを利用した Incremental Build のビルド時間(1:42s) [workflow](https://github.com/psbss/blog/actions#:~:text=Merge%20pull%20request%20%2389%20from%20psbss/package/update%2D20220601)
 ![GitHub Actions cache build log](./gha-log-cache.png)
 
 比較的軽量な私のブログでも約1分半の差がでることが判明しました！
