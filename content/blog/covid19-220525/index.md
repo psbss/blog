@@ -1,7 +1,7 @@
 ---
 title: "Covid-19感染記"
 date: "2022-06-02"
-category: "Life"
+category: "life"
 description: "新型コロナに感染したので症状や利用した制度について記録しておきました。"
 emoji: "😷"
 ---
