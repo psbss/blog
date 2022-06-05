@@ -37,7 +37,7 @@
     "react-helmet": "^6.0",
     "react-is": "^17.0.2",
     "styled-components": "^5.0",
-    "twemoji": "^13.1"
+    "twemoji": "^14.0"
   },
   "main": "n/a",
   "repository": {
