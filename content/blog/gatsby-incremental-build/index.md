@@ -67,7 +67,7 @@ jobs:
 比較的軽量な私のブログでも約1分半の差がでることが判明しました！
 
 ## 補足
-GitHub Actions公式が開発している Node.js 実行環境を作成する setup-node もv2からキャッシュ機能が実装されたので以下の様にディレクトリを指定するとライブラリをキャッシュしてくれます（20秒くらい早くなる）。
+GitHub Actions公式が開発している Node.js 実行環境を作成する setup-node もv2からキャッシュ機能が実装されたので以下の様にパッケージマネージャの種類を記載しておくといい感じにキャッシュしてくれます（20秒くらい早くなりました）。
 
 ```yaml:title=workflow.yml
 - uses: actions/setup-node@v2
@@ -75,3 +75,5 @@ GitHub Actions公式が開発している Node.js 実行環境を作成する se
     node-version: '14'
     cache: 'npm'
 ```
+
+現時点（2022/06/05）だと `npm, yarn, pnpm` に対応しているみたいです（[Doc](https://github.com/actions/setup-node/tree/eeb10cff27034e7acf239c5d29f62154018672fd)）
