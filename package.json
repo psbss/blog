@@ -21,7 +21,6 @@
     "gatsby-plugin-twitter": "^4.16",
     "gatsby-remark-code-titles": "^1.1.0",
     "gatsby-remark-copy-linked-files": "^5.16",
-    "gatsby-remark-custom-blocks": "^4.16",
     "gatsby-remark-embed-youtube": "^0.0.7",
     "gatsby-remark-external-links": "^0.0.4",
     "gatsby-remark-images": "^6.16",
