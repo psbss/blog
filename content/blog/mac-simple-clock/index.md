@@ -94,10 +94,10 @@ skin = BraunBN0032Dark()
 | SeikoStandardKX308WDark()                | ![skin image ](./skins/SeikoStandardKX308WDark.png)                |
 | FiveOClock()                             | ![skin image ](./skins/FiveOClock.png)                             |
 
-スキンは自作することも可能です。
+※ スキンは自作することも可能です。
 
 ## 最後に
 
-とても良いスクリーンセーバなのにメンテナンスされていないのがとても残念です。
+とても良いスクリーンセーバなのにメンテナンスされていないのがとても残念です。近々プルリクエスト出してみるつもりです。
 
 Simple Clock Screensaver の紹介でした。
