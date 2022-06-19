@@ -1,7 +1,7 @@
 ---
 title: "[エンジニア向け]MacBookのスクリーンセーバをシンプルかつイケてる時計にする方法"
 date: "2022-06-18"
-category: "Dev"
+category: "dev"
 description: "MacBookのスクリーンセーバをSimple Clock Screensaverを利用してカッコよくします。このスクリーンセーバは会社が管理する貸与PCでも設定可能です。"
 emoji: "🕒"
 ---

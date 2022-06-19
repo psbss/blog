@@ -181,6 +181,18 @@ const postContentStyle = css`
     border-radius: 4px;
     overflow: hidden;
   }
+  table {
+    td {
+      .gatsby-resp-image-wrapper {
+        .gatsby-resp-image-background-image {
+          padding-bottom: 0 !important;
+        }
+        img {
+          position: unset !important;
+        }
+      }
+    }
+  }
 `;
 
 export default postContentStyle;
