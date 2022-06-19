@@ -21,7 +21,6 @@
     "gatsby-plugin-twitter": "^4.0",
     "gatsby-remark-code-titles": "^1.0.2",
     "gatsby-remark-copy-linked-files": "^5.0",
-    "gatsby-remark-custom-blocks": "^4.0",
     "gatsby-remark-embed-youtube": "^0.0.7",
     "gatsby-remark-external-links": "^0.0.4",
     "gatsby-remark-images": "^6.0",
@@ -49,7 +48,6 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+    "clean": "gatsby clean"
   }
 }

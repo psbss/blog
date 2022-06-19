@@ -14,7 +14,6 @@ import FollowBudge from "../components/FollowBudge";
 
 import postSyntaxHighlightStyle from "../styles/postSyntaxHighlight";
 import postContentStyle from "../styles/postContent";
-import postCustomBlockStyle from "../styles/postCustomBlock";
 
 const Content = styled.section`
   position: relative;
@@ -73,7 +72,6 @@ const PostDate = styled.time`
 const PostContent = styled.div`
   ${postSyntaxHighlightStyle}
   ${postContentStyle}
-  ${postCustomBlockStyle}
 `;
 
 class BlogPostTemplate extends React.Component {
