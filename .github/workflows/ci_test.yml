@@ -14,7 +14,6 @@ jobs:
       - uses: technote-space/workflow-conclusion-action@v2
       - name: Slack Incoming Webhook
         uses: 8398a7/action-slack@v3
-        if: env.WORKFLOW_CONCLUSION == 'success'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
