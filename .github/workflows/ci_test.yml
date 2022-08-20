@@ -3,14 +3,14 @@ name: Gatsby build
 on:
   pull_request:
     branches:
-      - ci/**
+      - main
     types: [opened, synchronize]
 
 jobs:
   slack_notification:
     name: Slack notification
-    if: always()
     runs-on: ubuntu-latest
+    if: contains(github.head_ref, 'ci/*')
     steps:
       - uses: technote-space/workflow-conclusion-action@v2
       - name: Slack Incoming Webhook
