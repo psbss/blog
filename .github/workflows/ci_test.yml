@@ -31,7 +31,7 @@ jobs:
                   fields: [
                     {
                       title: "PR Title & URL",
-                      value: "PR Title: ${{ github.event.pull_request.title }}\nPR URL: ${{ github.event.pull_request.html_url }}",
+                      value: "PR Title: ${{ github.event.pull_request.title }} #${{ github.event.number }}\nPR URL: ${{ github.event.pull_request.html_url }}",
                       short: false
                     },
                     {
