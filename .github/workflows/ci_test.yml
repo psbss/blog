@@ -1,9 +1,10 @@
 name: Gatsby build
 
 on:
-  push:
+  pull_request:
+    types: [opened, synchronize]
     branches:
-      - ci/*
+    - ci/*
 
 jobs:
   slack_notification:
