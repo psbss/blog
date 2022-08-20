@@ -10,7 +10,7 @@ jobs:
   slack_notification:
     name: Slack notification
     runs-on: ubuntu-latest
-    if: contains(github.head_ref, 'ci/*')
+    if: contains(github.head_ref, 'ci/')
     steps:
       - uses: technote-space/workflow-conclusion-action@v2
       - name: Slack Incoming Webhook
