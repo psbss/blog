@@ -1,9 +1,10 @@
 name: Gatsby build
 
 on:
-  push:
+  pull_request:
     branches:
       - main
+    types: [opened, synchronize, closed]
 
 jobs:
   build_sync:
