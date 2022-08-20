@@ -1,4 +1,4 @@
-name: Gatsby build
+name: CI Test
 
 on:
   pull_request:
