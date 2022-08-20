@@ -5,8 +5,8 @@ on:
     types: 
     - opened
     - synchronize
-    branches:
-    - ci/**
+    # branches:
+    # - ci/**
 
 jobs:
   slack_notification:
