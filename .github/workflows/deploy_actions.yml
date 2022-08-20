@@ -1,9 +1,10 @@
 name: Gatsby build
 
 on:
-  push:
+  pull_request:
     branches:
       - main
+    types: [opened, synchronize]
 
 jobs:
   build_sync:
@@ -69,6 +70,11 @@ jobs:
                   author_name: "${{ github.actor }}",
                   author_icon: "${{ github.event.sender.avatar_url }}",
                   fields: [
+                    {
+                      title: "PR Title & URL",
+                      value: "<${{ github.event.pull_request.html_url }}|${{ github.event.pull_request.title }} #${{ github.event.number }}>",
+                      short: false
+                    },
                     {
                       title: "GitHub Actions URL",
                       value: "${{ github.event.repository.url }}/actions/runs/${{ github.run_id }}",
