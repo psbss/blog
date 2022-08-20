@@ -2,11 +2,9 @@ name: Gatsby build
 
 on:
   pull_request:
-    types: 
-    - opened
-    - synchronize
-    # branches:
-    # - ci/**
+    branches:
+      - ci/**
+    types: [opened, synchronize]
 
 jobs:
   slack_notification:
@@ -34,7 +32,7 @@ jobs:
                   fields: [
                     {
                       title: "PR Title & URL",
-                      value: "PR Title: ${{ github.event.pull_request.title }} #${{ github.event.number }}\nPR URL: ${{ github.event.pull_request.html_url }}",
+                      value: "[${{ github.event.pull_request.title }} #${{ github.event.number }}](PR URL: ${{ github.event.pull_request.html_url }})",
                       short: false
                     },
                     {
