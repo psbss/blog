@@ -24,11 +24,6 @@ const Footer = () => {
     <FooterContent>
       <ContentWrapper>
         <FooterInner>
-          <div>
-            <a href="https://github.com/psbss/blog" rel="nofollow noopener noreferrer" target="_blank">
-              SourceCode
-            </a>
-          </div>
           <div>© {new Date().getFullYear()}, Yuki Uehara All rights reserved.</div>
         </FooterInner>
       </ContentWrapper>
