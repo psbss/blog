@@ -37,12 +37,6 @@ const ShareLink = styled.a`
     transform: translateY(-2px);
   }
 `;
-const GitHubLink = styled.a`
-  display: inline-block;
-  margin-top: 1em;
-  font-size: 0.85em;
-  color: ${(props) => props.theme.colors.silver};
-`;
 
 const ShareButtons = ({ slug, title, emoji }) => {
   const encodedTitle = encodeURIComponent(
@@ -85,13 +79,6 @@ const ShareButtons = ({ slug, title, emoji }) => {
           B!
         </ShareLink>
       </ShareLinks>
-      <GitHubLink
-        href={`https://github.com/psbss/blog/edit/main/content/blog${slug}index.md`}
-        rel="nofollow noopener noreferrer"
-        target="_blank"
-      >
-        Edit on GitHub
-      </GitHubLink>
     </Wrapper>
   );
 };
