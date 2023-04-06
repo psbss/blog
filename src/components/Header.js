@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 import ContentWrapper from "../components/ContentWrapper";
-import svgLogo from "../svg/logo.svg";
+import svgLogo from "../svg/header_title.svg";
 
 const HeaderTag = styled.header`
-  padding: 1.4rem 0;
+  padding: 1.4rem 0 0.8rem 0;
   width: 100%;
 `;
 
@@ -51,8 +51,8 @@ const Header = ({ title, location }) => {
                 className="logo"
                 src={svgLogo}
                 alt={title}
-                width={165}
-                height={37}
+                width={333}
+                height={76}
               />
             </Link>
           </HeadingLevel>
