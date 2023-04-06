@@ -84,7 +84,7 @@ const Bio = () => {
     <StaticQuery
       query={bioQuery}
       render={(data) => {
-        const { author, social } = data.site.siteMetadata;
+        const { author, bioText, social } = data.site.siteMetadata;
         return (
           <BioWrapper>
             <BioHeader>
@@ -95,14 +95,14 @@ const Bio = () => {
             </BioHeader>
             <BioMain>
               <BioText>
-                22年新卒iOSエンジニアです!
+                {bioText}
               </BioText>
               <BioLinks>
-                <BioLink href="https://twitter.com/psnzbss" rel="nofollow noopener noreferrer" target="_blank">
+                <BioLink href={`https://twitter.com/${social.twitter}`} rel="nofollow noopener noreferrer" target="_blank">
                   <img src={svgTwitter} alt="Twitter" />
                   <div>Twitter</div>
                 </BioLink>
-                <BioLink href="https://github.com/psbss" rel="nofollow noopener noreferrer" target="_blank">
+                <BioLink href={`https://github.com/${social.github}`} rel="nofollow noopener noreferrer" target="_blank">
                   <img src={svgGithub} alt="GitHub" />
                   <div>GitHub</div>
                 </BioLink>
@@ -124,8 +124,10 @@ const bioQuery = graphql`query BioQuery {
   site {
     siteMetadata {
       author
+      bioText
       social {
         twitter
+        github
       }
     }
   }

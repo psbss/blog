@@ -2,10 +2,12 @@ module.exports = {
   siteMetadata: {
     title: `MoreCuriosity`,
     author: `Yuki Uehara`,
-    description: `地方で生活している学生が日々勉強した内容や参加したイベント情報などを発信します`,
+    bioText: `都内で働くiOSエンジニア(2年目)`,
+    description: `地方から東京に上京した新米エンジニアが日々感じたことや学びを発信します`,
     siteUrl: `https://blog.ue-y.me/`,
     social: {
       twitter: `psnzbss`,
+      github: `psbss`,
     },
     categories: [
       {
