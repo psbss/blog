@@ -28,7 +28,7 @@ const PostJsonLD = ({ title, description, date, categorySlug, url }) => {
           "@context": "http://schema.org",
           "@type": "BlogPosting",
           headline: title,
-          image: `${siteUrl}/images/ogp.png`,
+          image: `${siteUrl}/images/ogp_large.png`,
           editor: author,
           url: url,
           datePublished: dateFormatted,

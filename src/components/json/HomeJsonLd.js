@@ -25,7 +25,7 @@ const JsonLD = () => {
           "@type": "WebSite",
           image: {
             "@type": "ImageObject",
-            url: `${siteUrl}/images/ogp.png`,
+            url: `${siteUrl}/images/ogp_large.png`,
             height: 1200,
             width: 630,
           },
