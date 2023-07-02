@@ -8,14 +8,11 @@ jobs:
   pull_request:
     name: Package install / Build
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node: [16, 18]
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node }}
+          node-version: '18'
           cache: 'npm'
       - name: npm install
         run: npm ci

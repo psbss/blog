@@ -51,7 +51,7 @@
     "clean": "gatsby clean"
   },
   "volta": {
-    "node": "16.20.0",
-    "npm": "9.6.3"
+    "node": "18.16.1",
+    "npm": "9.7.2"
   }
 }
