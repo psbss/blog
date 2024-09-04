@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import { Helmet } from "react-helmet";
-import twemoji from "twemoji";
+import twemoji from "@twemoji/api";
 import styled from "styled-components";
 
 import Layout from "../components/Layout";

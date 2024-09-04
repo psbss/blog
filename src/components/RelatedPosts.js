@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
-import twemoji from "twemoji";
+import twemoji from "@twemoji/api";
 
 const Wrapper = styled.div`
   background: ${(props) => props.theme.colors.whitesmoke};
