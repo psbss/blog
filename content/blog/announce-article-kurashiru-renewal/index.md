@@ -2,7 +2,7 @@
 title: "新卒iOSエンジニアとしてクラシルiOSアプリのリニューアルを行った記事を書きました"
 date: "2023-07-01"
 category: "other"
-description: "delyのテックブログに記事を投稿しました"
+description: "delyのテックブログにアプリリニューアルをした記事を投稿しました"
 emoji: "📢"
 ---
 
