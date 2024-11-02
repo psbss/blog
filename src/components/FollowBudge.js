@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import svgTwitterWhite from "../svg/socials/twitter-white.svg";
+import svgX from "../svg/socials/x.svg";
 
 const Follow = styled.div`
   margin-top: 2em;
@@ -10,7 +10,7 @@ const Follow = styled.div`
 const FollowLink = styled.a`
   display: inline-flex;
   align-items: center;
-  background: #1da1f2;
+  background: #000000;
   color: #fff;
   padding: 0.5em 1em;
   border-radius: 4px;
@@ -20,8 +20,8 @@ const FollowLink = styled.a`
 const ShareButtons = () => {
   return (
     <Follow>
-      <FollowLink href="https://twitter.com/psnzbss" rel="nofollow noopener noreferrer" target="_blank">
-        <img src={svgTwitterWhite} alt="Twitter" width={31} height={17} />
+      <FollowLink href="https://x.com/psnzbss" rel="nofollow noopener noreferrer" target="_blank">
+        <img src={svgX} alt="X" width={31} height={17} />
         Follow @psnzbss
       </FollowLink>
     </Follow>

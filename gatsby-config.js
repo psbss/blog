@@ -6,7 +6,7 @@ module.exports = {
     description: `Hardな時こそ筋トレをすればどうにかなっているiOSエンジニアです`,
     siteUrl: `https://blog.ue-y.me/`,
     social: {
-      twitter: `psnzbss`,
+      x: `psnzbss`,
       github: `psbss`,
     },
     categories: [

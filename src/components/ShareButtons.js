@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import svgTwitterWhite from "../svg/socials/twitter-white.svg";
+import svgX from "../svg/socials/x.svg";
 
 const Wrapper = styled.div`
   margin: 1.8rem 0 0;
@@ -48,13 +48,13 @@ const ShareButtons = ({ slug, title, emoji }) => {
       <ShareTitle>SHARE</ShareTitle>
       <ShareLinks>
         <ShareLink
-          href={`https://twitter.com/share?url=${pageUrl}&text=${encodedTitle}&via=psnzbss`}
+          href={`https://x.com/share?url=${pageUrl}&text=${encodedTitle}&via=psnzbss`}
           rel="nofollow noopener noreferrer"
           target="_blank"
         >
           <img
-            src={svgTwitterWhite}
-            alt="Twitter"
+            src={svgX}
+            alt="X"
             style={{
               width: "24px",
               height: "19px",
