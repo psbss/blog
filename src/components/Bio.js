@@ -3,7 +3,7 @@ import { StaticQuery, graphql } from "gatsby";
 import styled from "styled-components";
 
 import pngAvatar from "../svg/avatar.png";
-import svgTwitter from "../svg/socials/twitter.svg";
+import svgX from "../svg/socials/x.svg";
 import svgGithub from "../svg/socials/github.svg";
 
 const BioWrapper = styled.div`
@@ -90,7 +90,7 @@ const Bio = () => {
             <BioHeader>
               <AvatarImage src={pngAvatar} alt={author} />
               <BioName>
-                <a href={`https://twitter.com/${social.twitter}`} rel="nofollow noopener noreferrer" target="_blank">{author}</a>
+                <a href={`https://x.com/${social.x}`} rel="nofollow noopener noreferrer" target="_blank">{author}</a>
               </BioName>
             </BioHeader>
             <BioMain>
@@ -98,9 +98,9 @@ const Bio = () => {
                 {bioText}
               </BioText>
               <BioLinks>
-                <BioLink href={`https://twitter.com/${social.twitter}`} rel="nofollow noopener noreferrer" target="_blank">
-                  <img src={svgTwitter} alt="Twitter" />
-                  <div>Twitter</div>
+                <BioLink href={`https://x.com/${social.x}`} rel="nofollow noopener noreferrer" target="_blank">
+                  <img src={svgX} alt="X" />
+                  <div>X</div>
                 </BioLink>
                 <BioLink href={`https://github.com/${social.github}`} rel="nofollow noopener noreferrer" target="_blank">
                   <img src={svgGithub} alt="GitHub" />
@@ -126,7 +126,7 @@ const bioQuery = graphql`query BioQuery {
       author
       bioText
       social {
-        twitter
+        x
         github
       }
     }
