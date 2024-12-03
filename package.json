@@ -51,7 +51,9 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "zenn-new": "zenn new:article --slug",
+    "zenn-develop": "zenn preview"
   },
   "volta": {
     "node": "18.16.1",
