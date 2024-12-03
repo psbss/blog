@@ -8,6 +8,10 @@ This is my Tech and Life blog
 - Customed design and feature
 - Emoji friendly
 
+## Zenn
+
+このリポジトリでは、エンジニア情報交流コミュニティプラットフォーム「Zenn」に投稿しているコンテンツの管理も行っています。
+
 ## Note
 
 このブログはMITにて公開されている [catnoseさんのブログ](https://github.com/catnose99/CatKnows) をフォークさせていただき作成しました
