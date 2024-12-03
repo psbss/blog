@@ -6,8 +6,7 @@ topics: [
   "ios",
   "magicpod"
 ]
-published: true
-published_at: "2024-12-06 00:00"
+published: false
 publication_name: "dely_jp"
 ---
 
