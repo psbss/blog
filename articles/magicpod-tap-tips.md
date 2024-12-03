@@ -6,7 +6,8 @@ topics: [
   "ios",
   "magicpod"
 ]
-published: false
+published: true
+published_at: "2024-12-06 00:00"
 publication_name: "dely_jp"
 ---
 
@@ -81,5 +82,5 @@ MagicPod は、iOSやAndroid、Webアプリを対象に実際にアプリを操�
 
 - MagicPod は強力なE2Eテストツール
 - 画面レイアウトが取得できない場合は「指定位置タップ機能（座標）」が利用できる
-- 座標設定は難しいが、効率的な設定方法を見つけました
+- 座標設定は難しいが、効率的な設定方法を見つけた
 - MagicPod のGUIが簡単になることを祈ります 🙏
