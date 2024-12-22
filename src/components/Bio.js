@@ -5,6 +5,7 @@ import styled from "styled-components";
 import pngAvatar from "../svg/avatar.png";
 import svgX from "../svg/socials/x.svg";
 import svgGithub from "../svg/socials/github.svg";
+import svgSpeakerDeck from "../svg/socials/speaker_deck.svg";
 
 const BioWrapper = styled.div`
   position: sticky;
@@ -106,6 +107,10 @@ const Bio = () => {
                   <img src={svgGithub} alt="GitHub" />
                   <div>GitHub</div>
                 </BioLink>
+                <BioLink href={`https://speakerdeck.com/${social.speakerDeck}`} rel="nofollow noopener noreferrer" target="_blank">
+                  <img src={svgSpeakerDeck} alt="SpeakerDeck" />
+                  <div>SpeakerDeck</div>
+                </BioLink>
               </BioLinks>
             </BioMain>
           </BioWrapper>
@@ -128,6 +133,7 @@ const bioQuery = graphql`query BioQuery {
       social {
         x
         github
+        speakerDeck
       }
     }
   }

@@ -1,13 +1,14 @@
 module.exports = {
   siteMetadata: {
     title: `MoreCuriosity`,
-    author: `uetyo / 上ちょ`,
+    author: `上ちょ / uetyo`,
     bioText: `都内で働くiOSエンジニア(3年目)`,
-    description: `Hardな時こそ筋トレをすればどうにかなっているiOSエンジニアです`,
+    description: `辛い時は筋トレで追い込むiOSエンジニアです`,
     siteUrl: `https://blog.ue-y.me/`,
     social: {
       x: `psnzbss`,
       github: `psbss`,
+      speakerDeck: `uetyo`,
     },
     categories: [
       {

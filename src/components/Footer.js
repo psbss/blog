@@ -24,7 +24,7 @@ const Footer = () => {
     <FooterContent>
       <ContentWrapper>
         <FooterInner>
-          <div>© {new Date().getFullYear()}, Yuki Uehara All rights reserved.</div>
+          <div>© {new Date().getFullYear()}, Yuki UEHARA All rights reserved.</div>
         </FooterInner>
       </ContentWrapper>
     </FooterContent>
