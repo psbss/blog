@@ -1,5 +1,5 @@
 ---
-title: "2020年を振り返る by Yuu"
+title: "2020年を振り返る"
 date: "2020-12-31"
 description: "2020年を振り返り2021年をどのように生きるのか考えます。"
 category: "life"
