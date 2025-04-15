@@ -33,7 +33,7 @@
     "gatsby-source-filesystem": "^5.13",
     "gatsby-transformer-remark": "^6.13",
     "gatsby-transformer-sharp": "^5.13",
-    "prismjs": "^1.29.0",
+    "prismjs": "^1.30.0",
     "react": "^18.3",
     "react-dom": "^18.3",
     "react-helmet": "^6.1.0",
