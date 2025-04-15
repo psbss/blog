@@ -1,5 +1,5 @@
 ---
-title: "2023年を振り返る by Yuu"
+title: "2023年を振り返る"
 date: "2023-12-31"
 category: "life"
 description: "残り数日で2023年が終わるので、一年間の振り返りをします"
