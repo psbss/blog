@@ -87,7 +87,7 @@ XcodeCloud の実行環境が AppleSilicon系のチップになれば丸く解�
 
 | 改善前                                                                       | 改善後                                                                                            |
 | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| ![](/images/selective-testing-script/test-full.png)<br> *全てのテストを実行* | ![](/images/selective-testing-script/test-selective.png)<br> *関連するモジュールのテストのみ実行* |
+| ![](/images/selective-testing-script/test-full-modules.png)<br> *全てのテストを実行* | ![](/images/selective-testing-script/test-selective-modules.png)<br> *関連するモジュールのテストのみ実行* |
 
 この制御を実現するためカスタムスクリプトを実行する必要があります。XcodeCloud では特定のタイミングでのみ独自のスクリプトを実行して挙動を調整することができます。
 
