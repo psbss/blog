@@ -6,7 +6,8 @@ topics: [
   "ios",
   "xcodecloud"
 ]
-published: false
+published: true
+published_at: "2025-04-24 12:00"
 publication_name: "dely_jp"
 ---
 
