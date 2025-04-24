@@ -38,8 +38,7 @@
     "react-dom": "^18.3",
     "react-helmet": "^6.1.0",
     "react-is": "^18.3",
-    "styled-components": "^6.1",
-    "zenn-cli": "^0.1.158"
+    "styled-components": "^6.1"
   },
   "main": "n/a",
   "repository": {
@@ -58,5 +57,8 @@
   "volta": {
     "node": "18.16.1",
     "npm": "9.7.2"
+  },
+  "devDependencies": {
+    "zenn-cli": "^0.1.159"
   }
 }
