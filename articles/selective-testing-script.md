@@ -16,7 +16,7 @@ publication_name: "dely_jp"
 この記事では、XcodeCloudの実行時間改善をAIと協業した結果、爆速で成果が出たので改善内容とAIの活用方法について紹介します 🤖
 
 :::message
-XcodeCloud の実行環境が AppleSilicon系のチップになれば丸く解決するのになぁというポエムではありません（2025/04/23現在、XcodeCloudはIntel系のチップを搭載したマシンで実行されています）
+XcodeCloud の実行環境が Apple Silicon系のチップになれば丸く解決するのになぁ、というポエムではありません（2025/04/23現在、XcodeCloudはIntel系チップを搭載したマシンで実行されています）
 :::
 
 
@@ -26,7 +26,7 @@ XcodeCloud の実行環境が AppleSilicon系のチップになれば丸く解�
 
 [以前の改善](https://zenn.dev/dely_jp/articles/d6d84cdb8dc8de#%E5%89%8D%E6%8F%90)でXcodeCloudのテスト実行時間を**24分→19分**まで短縮しましたが、機能追加やテスト拡充により平均実行時間が**34分**まで悪化してしまいました。
 
-直近の開発メンバー増加に伴い、CIの待ち時間が開発効率の大きなボトルネックとして顕在化するなか実行時間短縮が急務となっていたため、再度の改善に取り組みました。
+直近の開発メンバー増加に伴い、CIの待ち時間が開発効率の大きなボトルネックとして顕在化する中、実行時間短縮が急務となっていたため、再度の改善に取り組みました。
 
 
 ## XcodeCloudの実行時間削減対象の決定
@@ -95,7 +95,7 @@ XcodeCloud の実行環境が AppleSilicon系のチップになれば丸く解�
 ![](/images/selective-testing-script/xcode-cloud-ciscripts.png)
 *https://developer.apple.com/documentation/xcode/writing-custom-build-scripts*
 
-今回は `Pre-XcodeBuild` のタイミングで、変更のあったモジュールの特定、XCTestPlanの上書きを行うスクリプトを実行することで実現しました。
+今回は `Pre-XcodeBuild` のタイミングで、変更のあったモジュールの特定、XCTestPlanを書き換えるスクリプトを実行することで実現しました。
 
 :::message
 当初は [mikeger/XcodeSelectiveTesting](https://github.com/mikeger/XcodeSelectiveTesting) というツールを用いて実現しようとしましたが、クラシルリワードのプロジェクト構成に合わなかったため、自作することにしました。
@@ -103,7 +103,7 @@ XcodeCloud の実行環境が AppleSilicon系のチップになれば丸く解�
 
 
 ## AIと共に作る自作スクリプト
-AIをゴリゴリ使って改善していきます。
+AIを積極的に活用して改善していきます。
 
 ### GitHub API を利用したルートコミットハッシュの取得
 XcodeCloud では実行されているブランチ名やベースブランチ名、PullRequestの番号を環境変数として取得することができます。
@@ -133,9 +133,9 @@ git diff --name-only ${ROOT_COMMIT_HASH} HEAD
 :::
 
 #### 1. Package.swift の構成情報を取得
-Package.swiftを読み込み、 Target と TestTarget の `name`, `path（存在する場合は）` をいい感じに取得します（Regex、Python、SwiftSyntaxParser等）。結果は再利用しやすいようにJSON形式で出力しました。
+Package.swiftを読み込み、 Target と TestTarget の `name`, `path（存在する場合は）` を適切に取得します（Regex、Python、SwiftSyntaxParser等）。結果は再利用しやすいようにJSON形式で出力しました。
 
-※ 本来は `swift package` コマンド等で取得したいところですが、 path の情報が取得できなかったため、今回は自作しました。
+※ 本来は `swift package` コマンド等で取得したいところですが、pathの情報が取得できなかったため、今回は自作しました。
 
 :::details 取得結果
 ```json
@@ -301,7 +301,7 @@ def recursive_extract_targets(seeds, targets):
 
 :::message alert
 5の処理で空配列が返却された場合、XCTestPlanの実行対象がなくなります。  
-テスト対象が存在しない場合、CIが失敗するため `DummyTarget` などのダミーターゲットを用意しておくと良いかもしれません。
+テスト対象が存在しない場合、CIが失敗するため、`DummyTarget` などのダミーターゲットを用意しておくと良いかもしれません。
 :::
 
 :::details 変更によって影響を受けたターゲットのテストターゲット一覧
@@ -378,7 +378,7 @@ def recursive_extract_targets(seeds, targets):
 
 今回、ClineやChatGPTなどAIを活用して開発したところ、1日程度でスクリプトが完成しました！
 
-むしろXcodeCloud側の仕様調査やAppleのドキュメントを読む時間のほうが長かった印象です。AppleのドキュメントについてはDeepResearchも利用しましたが、知りたい部分が書かれていないこともあり（XcodeCloud内のGit周りなど）調査に苦労しました。
+むしろ、XcodeCloud側の仕様調査やAppleのドキュメントを読む時間のほうが長かった印象です。AppleのドキュメントについてはDeepResearchも利用しましたが、知りたい部分が書かれていないこともあり（XcodeCloud内のGit周りなど）調査に苦労しました。
 
 日々の開発が格段に快適になったため、こういったAIがボトルネックを見つけにくい部分の改善活動などを今年は考えていきたいと思います。
 
