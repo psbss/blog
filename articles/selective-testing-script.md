@@ -98,7 +98,7 @@ XcodeCloud の実行環境が AppleSilicon系のチップになれば丸く解�
 今回は `Pre-XcodeBuild` のタイミングで、変更のあったモジュールの特定、XCTestPlanの上書きを行うスクリプトを実行することで実現しました。
 
 :::message
-当初は [mikeger/XcodeSelectiveTesting](https://github.com/mikeger/XcodeSelectiveTesting) というツールを用いて実現しようとしたんですが、クラシルリワードのプロジェクト構成に合わなかったため、自作することにしました。
+当初は [mikeger/XcodeSelectiveTesting](https://github.com/mikeger/XcodeSelectiveTesting) というツールを用いて実現しようとしましたが、クラシルリワードのプロジェクト構成に合わなかったため、自作することにしました。
 :::
 
 
@@ -209,24 +209,6 @@ swift package dump-package
 #### 4. ターゲットの依存関係を1対1でマッピング
 ターゲット名にTestと付与されているものと、依存（dependencies）を1対1でマッピングします。
 
-例えば `HogeTests` というテストターゲットが依存先として `FugaModel`, `FooLogic`, `BarService` を持っている場合は、3つのマッピング結果を生成します。
-```json
-[
-    {
-        "target_name": "FugaModel",
-        "test_target_name": "HogeTests"
-    },
-    {
-        "target_name": "FooLogic",
-        "test_target_name": "HogeTests"
-    },
-    {
-        "target_name": "BarService",
-        "test_target_name": "HogeTests"
-    }
-]
-```
-
 :::details マッピング結果
 ```json
 [
@@ -257,6 +239,24 @@ swift package dump-package
 ]
 ```
 :::
+
+例えば `HogeTests` というテストターゲットが依存先として `FugaModel`, `FooLogic`, `BarService` を持っている場合は、3つのマッピング結果を生成します。
+```json
+[
+    {
+        "target_name": "FugaModel",
+        "test_target_name": "HogeTests"
+    },
+    {
+        "target_name": "FooLogic",
+        "test_target_name": "HogeTests"
+    },
+    {
+        "target_name": "BarService",
+        "test_target_name": "HogeTests"
+    }
+]
+```
 
 #### 5. 変更されたターゲットから依存するターゲットを特定
 クレンジング済みのターゲットデータと変更されたターゲットデータを再帰的に処理し、依存ターゲットを特定していきます。もし変更したファイルがどのモジュールにも属さない場合は、空配列を返却してください。
@@ -308,14 +308,37 @@ def recursive_extract_targets(seeds, targets):
 ```json
 {
   "test_targets": [
-    "UserAccountTests",
-    "AdFeatureTests",
-    "PartnerIntroTests",
-    "PartnerBookmarkTests",
-    "PartnerCouponTests",
-    "PartnerDetailTests",
-    "FontSizeCacheTests"
+    "AdAcquisitionCompleteTests"
   ]
+}
+```
+:::
+
+::: details XCTestPlanの上書き後
+```json
+{
+  "configurations": [
+    {
+      "id": "XXXXXXXX",
+      "name": "Configuration 1",
+      "options": {}
+    }
+  ],
+  "defaultOptions": {
+    "codeCoverage": false,
+    "maximumTestRepetitions": 10,
+    "testRepetitionMode": "retryOnFailure"
+  },
+  "testTargets": [ // ここから下の部分を書き換える
+    {
+      "target": {
+        "containerPath": "container:",
+        "identifier": "AdAcquisitionCompleteTests",
+        "name": "AdAcquisitionCompleteTests"
+      }
+    }
+  ],
+  "version": 1
 }
 ```
 :::
@@ -341,10 +364,17 @@ def recursive_extract_targets(seeds, targets):
 |                                        |                              |
 | 合計実行時間                           | 34分19.5秒 -> **16分28.5秒** |
 
-※ 念のため、毎日朝と夕方に全てのテストを実行することで差分テストの安全性も担保しています。
-
 1ヶ月ほど運用した結果、実測値でも **50%** ほどCIの実行時間が削減され、非常に大きな成果となりました。
 ![](/images/selective-testing-script/asc-xcodecloud-selective-testing-result.png)
+*3月は改善前と改善後のCIを並列で動かしていた関係で外れ値になっています*
+
+:::message alert
+アプリ側に近いモジュールを変更した場合、影響するモジュール数も少ないため実行時間が短いですが、アプリの基盤側（APIClient、EventLogger等）の場合は、影響するモジュール数が多くなるため、必ずしも実行時間が50％に削減されるわけではありません。
+:::
+
+:::message
+念のため、毎日朝と夕方に全てのテストを実行することで差分テストによる安全性も担保しています。
+:::
 
 今回、ClineやChatGPTなどAIを活用して開発したところ、1日程度でスクリプトが完成しました！
 
