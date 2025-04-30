@@ -1,5 +1,5 @@
 ---
-title: "クラシルリワードにおけるXcodeCloudの実行時間削減対応まとめ（2025/05）"
+title: "クラシルリワードにおけるXcodeCloudの実行時間削減対応まとめ（2025/04）"
 emoji: "⏱️"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [
