@@ -1,5 +1,5 @@
 ---
-title: "クラシルリワードにおけるXcodeCloudの実行時間削減対応まとめ（2025/04）"
+title: "クラシルリワードにおけるXcodeCloudの実行時間削減対応まとめ（2025/05）"
 emoji: "⏱️"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [
@@ -7,7 +7,9 @@ topics: [
   "xcode",
   "xcodecloud"
 ]
-published: false
+published: true
+published_at: "2025-04-30 18:00"
+publication_name: "dely_jp"
 ---
 
 こんにちは。dely株式会社のiOSエンジニア [uetyo](https://x.com/psnzbss) です！
