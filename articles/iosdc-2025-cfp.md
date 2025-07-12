@@ -35,6 +35,10 @@ iOS関連技術をコアのテーマとした技術者のためのカンファ�
 カンファレンス実施後に確定版へ更新します。
 :::
 
+:::message
+mermaid のベータ機能である xychart でグラフを作成しています。
+設定上は年ごとの本数表示を行うようにしていますが、なぜか表示されていないです。
+:::
 
 ### 20分トーク枠
 枠の変更点：特になし
@@ -48,6 +52,7 @@ iOS関連技術をコアのテーマとした技術者のためのカンファ�
 config:
     xyChart:
         height: 330
+        showDataLabel: true
 ---
 xychart-beta
     title "投稿数"
@@ -63,6 +68,7 @@ xychart-beta
 config:
     xyChart:
         height: 250
+        showDataLabel: true
 ---
 xychart-beta
     title "採択数"
@@ -101,6 +107,7 @@ xychart-beta
 config:
     xyChart:
         height: 330
+        showDataLabel: true
 ---
 xychart-beta
     title "投稿数"
@@ -116,6 +123,7 @@ xychart-beta
 config:
     xyChart:
         height: 250
+        showDataLabel: true
 ---
 xychart-beta
     title "採択数"
@@ -154,6 +162,7 @@ xychart-beta
 config:
     xyChart:
         height: 330
+        showDataLabel: true
 ---
 xychart-beta
     title "投稿数"
@@ -169,6 +178,7 @@ xychart-beta
 config:
     xyChart:
         height: 250
+        showDataLabel: true
 ---
 xychart-beta
     title "採択数"
@@ -205,6 +215,7 @@ xychart-beta
 config:
     xyChart:
         height: 330
+        showDataLabel: true
 ---
 xychart-beta
     title "投稿数"
@@ -220,6 +231,7 @@ xychart-beta
 config:
     xyChart:
         height: 250
+        showDataLabel: true
 ---
 xychart-beta
     title "採択数"
@@ -258,6 +270,7 @@ xychart-beta
 config:
     xyChart:
         height: 330
+        showDataLabel: true
 ---
 xychart-beta
     title "投稿数"
@@ -273,6 +286,7 @@ xychart-beta
 config:
     xyChart:
         height: 250
+        showDataLabel: true
 ---
 xychart-beta
     title "採択数"
@@ -311,6 +325,7 @@ xychart-beta
 config:
     xyChart:
         height: 330
+        showDataLabel: true
 ---
 xychart-beta
     title "投稿数"
@@ -326,6 +341,7 @@ xychart-beta
 config:
     xyChart:
         height: 250
+        showDataLabel: true
 ---
 xychart-beta
     title "採択数"
@@ -364,6 +380,7 @@ xychart-beta
 config:
     xyChart:
         height: 330
+        showDataLabel: true
 ---
 xychart-beta
     title "投稿数"
@@ -379,6 +396,7 @@ xychart-beta
 config:
     xyChart:
         height: 250
+        showDataLabel: true
 ---
 xychart-beta
     title "採択数"
@@ -406,8 +424,9 @@ xychart-beta
 
 
 ## まとめ
-OOの枠は例年よりも採択数が増加しており、狙い目でしたね
+今年は例年採択率100％だったパンフレット枠が、投稿本数増加により惜しくも採用されないものが発生しました。
 
+トークの本数に関しても20分枠以外はプロポーザル本数がやや減少しています。
 
 ---
 
