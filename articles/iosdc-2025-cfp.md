@@ -54,6 +54,9 @@ config:
     xyChart:
         height: 330
         showDataLabel: true
+    themeVariables:
+        xyChart:
+            plotColorPalette: '#3EA8FF'
 ---
 xychart-beta
     title "投稿数"
@@ -71,6 +74,9 @@ config:
     xyChart:
         height: 250
         showDataLabel: true
+    themeVariables:
+        xyChart:
+            plotColorPalette: '#3EA8FF'
 ---
 xychart-beta
     title "採択数"
@@ -87,6 +93,9 @@ xychart-beta
 config:
     xyChart:
         height: 250
+    themeVariables:
+        xyChart:
+            plotColorPalette: '#3EA8FF'
 ---
 xychart-beta
     title "採択率"
@@ -111,6 +120,9 @@ config:
     xyChart:
         height: 330
         showDataLabel: true
+    themeVariables:
+        xyChart:
+            plotColorPalette: '#3EA8FF'
 ---
 xychart-beta
     title "投稿数"
@@ -128,6 +140,9 @@ config:
     xyChart:
         height: 250
         showDataLabel: true
+    themeVariables:
+        xyChart:
+            plotColorPalette: '#3EA8FF'
 ---
 xychart-beta
     title "採択数"
@@ -144,6 +159,9 @@ xychart-beta
 config:
     xyChart:
         height: 250
+    themeVariables:
+        xyChart:
+            plotColorPalette: '#3EA8FF'
 ---
 xychart-beta
     title "採択率"
@@ -168,6 +186,9 @@ config:
     xyChart:
         height: 330
         showDataLabel: true
+    themeVariables:
+        xyChart:
+            plotColorPalette: '#3EA8FF'
 ---
 xychart-beta
     title "投稿数"
@@ -185,6 +206,9 @@ config:
     xyChart:
         height: 250
         showDataLabel: true
+    themeVariables:
+        xyChart:
+            plotColorPalette: '#3EA8FF'
 ---
 xychart-beta
     title "採択数"
@@ -201,6 +225,9 @@ xychart-beta
 config:
     xyChart:
         height: 250
+    themeVariables:
+        xyChart:
+            plotColorPalette: '#3EA8FF'
 ---
 xychart-beta
     title "採択率"
@@ -223,6 +250,9 @@ config:
     xyChart:
         height: 330
         showDataLabel: true
+    themeVariables:
+        xyChart:
+            plotColorPalette: '#3EA8FF'
 ---
 xychart-beta
     title "投稿数"
@@ -240,6 +270,9 @@ config:
     xyChart:
         height: 250
         showDataLabel: true
+    themeVariables:
+        xyChart:
+            plotColorPalette: '#3EA8FF'
 ---
 xychart-beta
     title "採択数"
@@ -256,6 +289,9 @@ xychart-beta
 config:
     xyChart:
         height: 250
+    themeVariables:
+        xyChart:
+            plotColorPalette: '#3EA8FF'
 ---
 xychart-beta
     title "採択率"
@@ -280,6 +316,9 @@ config:
     xyChart:
         height: 330
         showDataLabel: true
+    themeVariables:
+        xyChart:
+            plotColorPalette: '#3EA8FF'
 ---
 xychart-beta
     title "投稿数"
@@ -296,6 +335,9 @@ config:
     xyChart:
         height: 250
         showDataLabel: true
+    themeVariables:
+        xyChart:
+            plotColorPalette: '#3EA8FF'
 ---
 xychart-beta
     title "採択数"
@@ -311,6 +353,9 @@ xychart-beta
 config:
     xyChart:
         height: 250
+    themeVariables:
+        xyChart:
+            plotColorPalette: '#3EA8FF'
 ---
 xychart-beta
     title "採択率"
@@ -335,6 +380,9 @@ config:
     xyChart:
         height: 330
         showDataLabel: true
+    themeVariables:
+        xyChart:
+            plotColorPalette: '#3EA8FF'
 ---
 xychart-beta
     title "投稿数"
@@ -351,6 +399,9 @@ config:
     xyChart:
         height: 250
         showDataLabel: true
+    themeVariables:
+        xyChart:
+            plotColorPalette: '#3EA8FF'
 ---
 xychart-beta
     title "採択数"
@@ -366,6 +417,9 @@ xychart-beta
 config:
     xyChart:
         height: 250
+    themeVariables:
+        xyChart:
+            plotColorPalette: '#3EA8FF'
 ---
 xychart-beta
     title "採択率"
@@ -390,6 +444,9 @@ config:
     xyChart:
         height: 330
         showDataLabel: true
+    themeVariables:
+        xyChart:
+            plotColorPalette: '#3EA8FF'
 ---
 xychart-beta
     title "投稿数"
@@ -406,6 +463,9 @@ config:
     xyChart:
         height: 250
         showDataLabel: true
+    themeVariables:
+        xyChart:
+            plotColorPalette: '#3EA8FF'
 ---
 xychart-beta
     title "採択数"
@@ -421,6 +481,9 @@ xychart-beta
 config:
     xyChart:
         height: 250
+    themeVariables:
+        xyChart:
+            plotColorPalette: '#3EA8FF'
 ---
 xychart-beta
     title "採択率"
