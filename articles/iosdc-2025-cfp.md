@@ -6,7 +6,8 @@ topics: [
     カンファレンス,
     iOSDC
 ]
-published: false
+published: true
+published_at: "2025-07-25 07:30"
 ---
 
 今年もこの時期がやってきました 🎤
