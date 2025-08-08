@@ -57,8 +57,7 @@
     "zenn-new": "zenn new:article --slug",
     "zenn-develop": "zenn preview"
   },
-  "volta": {
-    "node": "18.16.1",
-    "npm": "9.7.2"
+  "engines": {
+    "node": "22.x"
   }
 }
