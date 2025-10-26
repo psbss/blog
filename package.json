@@ -40,9 +40,6 @@
     "react-is": "^18.3",
     "styled-components": "^6.1"
   },
-  "devDependencies": {
-    "zenn-cli": "^0.2.3"
-  },
   "main": "n/a",
   "repository": {
     "type": "git",
